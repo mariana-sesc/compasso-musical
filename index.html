@@ -26,11 +26,11 @@
         transition: color 0.3s ease;
       }
 
-      .linkNav:hover{
+        .linkNav:hover{
         color: #d32F2f;
-      }
+        }
 
-      .botaoPrincipal{
+        .botaoPrincipal{
         display: inline-block;
         background-color: #d32F2f;
         color: #ffffff;
@@ -39,25 +39,25 @@
         font-weight: bolder;
         margin-top: 1rem;
         transition: background-color 0.3s ease;
-      }
+        }
 
-      .botaoPrincipal:hover {
+        .botaoPrincipal:hover {
         background-color: #b71b1b;
         color: #ffffff;
-      }
+        }
 
-      body{
+        body{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f8f9fa;
         color: #333333;
         line-height: 1.6;
-      }
+        }
 
-      h1, h2, h3{
+        h1, h2, h3{
         color: #1a1a1a;
         margin-bottom: 1rem;
-      }
-      p{
+        }
+        p{
         margin-bottom: 1rem;
       }
 
@@ -70,24 +70,50 @@
        list-style: none; 
       }
 
-      .cabecalhoPrincipal{
+        .cabecalhoPrincipal{
         background-color: #ffffff;
         padding: 1.5rem 5%;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
+       }
 
-      .container{
+        .container{
         padding: 4rem 5%;
-      }
+   }
 
-      .tituloSecao{
+    .tituloSecao{
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: 2rem;
       }
+
+      .gradeInstrumentos{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+         flex-wrap: wrap;
+      }
+
+        .cartaoInstrumento{
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        width: 300px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        transition: transform 0.3s ease;
+        }
+
+        .cartaoInstrumento:hover{
+        transform: translateY(-5px);
+        }
+
+        .nomeInstrumento{
+        
+        }
+
 
       
     </style>
@@ -153,47 +179,48 @@
    </section>
 
    <!--instrumentos-->
-   <section id="instrumentos">
-    <h2>catalogo</h2>
-    <article>
-        <h3>guitarra eletrica stratotester</h3>
-        <img 
-            src="sayla-brown-H6j0Zsy91WY-unsplash.jpg" 
-            alt="imagem da guitarra stratotester"
-            width="300"
-        >
-        <p>
-            <strong>marca: </strong>fender
-        </p>
-
-        <p>
-            guitaraa classica de alta perfomance, ideal para rock e blues.
-        </p>
-        <p>
-            <em>preço: R$ 3.500,00</em>
-        </p>
-        <a href="#">adicionar ao carrinho</a>
-    </article>
-    <article>
-        <h3>kit bateria</h3>
-        <img 
-            src="brooke-balentine-jJupVYilrEE-unsplash.jpg" 
-            alt="imagem do ki de bateria"
-            width="300"
-        >
-        <p>
-            <strong>marca: </strong>perl
-        </p>
-        kit de bateria ideal para voce
-
-        <p>
-    
-        </p>
-        <p>
-            <em>preço: R$ 13.900,00</em>
-        </p>
-        <a href="#">adicionar ao carrinho</a>
-    </article>
+   <section id="instrumentos" class="container" style="background-color: #eeeeee;">
+    <h2 class="tituloSecao">catalogo</h2>
+    <div class="gradeInstrumentos">
+        <article class="cartaoInstrumento">
+            <h3 class="cartaoInstrumento">guitarra eletrica stratotester</h3>
+            <img 
+                src="guitarra.jpg" 
+                alt="imagem da guitarra stratotester"
+                width="250"
+                style="border-radius: 4px; margin-bottom: 1rem;"
+            >
+            <p>
+                <strong>marca: </strong>fender
+            </p>
+            <p>
+                guitaraa classica de alta perfomance, ideal para rock e blues.
+            </p>
+            <p style="color: #d32F2f; font-weight: bold; font-size: 1.2rem;">
+                <em>preço: R$ 3.500,00</em>
+            </p>
+            <a href="#botaoPrincipal" class="botaoPrincipal">adicionar ao carrinho</a>
+        </article>
+        <article class="cartaoInstrumento">
+            <h3>kit bateria</h3>
+            <img 
+                src="brooke-balentine-jJupVYilrEE-unsplash.jpg" 
+                alt="imagem do kit de bateria"
+                width="250"
+                style="border-radius: 4px; margin-bottom: 1rem;"
+            >
+            <p>
+                <strong>marca: </strong>perl
+            </p>
+            kit de bateria ideal para voce
+            <p>
+            </p>
+            <p style="color: #d32F2f; font-weight: bold; font-size: 1.2rem;">
+                <em>preço: R$ 13.900,00</em>
+            </p>
+            <a href="#botaoPrincipal" class="botaoPrincipal">adicionar ao carrinho</a>
+        </article>
+    </div>
    </section>
 
    <!-- seção depoimentos-->
